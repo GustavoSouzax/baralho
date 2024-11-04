@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --fonte-padrao: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #bdbdbd;
+    font-family: var(--fonte-padrao);
+    margin: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para o baralho */
+section#cartas {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+div#deck {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+}
+
+.suit-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card {
+    width: 60px;
+    height: 90px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilos específicos para naipes */
+.card.hearts, .card.diamonds {
+    color: red;
+}
+
+.card.spades, .card.clubs {
+    color: black;
+}
+
+.card .symbol {
+    font-size: 1.4em;
+    line-height: 1;
+}
+
+
+section#dados {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
+    width: calc(100% - 40px);
+}
+
+div.caixa-dado {
+    background: #444;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+p.dado-p {
+    font-size: clamp(18px, 4vw, 24px);
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+p.label-p {
+    font-size: clamp(12px, 3vw, 14px);
+    color: #aaa;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    font-weight: 500;
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+@media (min-width: 768px) {
+    p#p {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    p#g {
+        display: none;
+    }
+
+}

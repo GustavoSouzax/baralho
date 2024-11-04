@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cartas do baralho</h1>
+    </header>
+
+    <section id="cartas">
+        <div id="deck"></div> <!-- Div onde o deck de cartas será inserido -->
+    </section>
+
+    <section id="dados">
+        <div class="caixa-dado">
+            <p class="dado-p" id="combinacoes">1</p>
+            <p class="label-p">Combinações</p>
+        </div>
+        <div class="caixa-dado">
+            <p class="dado-p" id="ciclos-completos">0</p>
+            <p class="label-p">Ciclos Completados</p>
+        </div>
+        <div class="caixa-dado">
+            <p class="dado-p" id="tempo-anos">1a 4m 3d</p>
+            <p class="dado-p" id="tempo-horas">0:00:00</p>
+            <p class="label-p">Tempo Decorrido</p>
+        </div>
+        <div class="caixa-dado">
+            <p class="dado-p" id="velocidade">1</p>
+            <p class="label-p">Velocidade /s</p>
+        </div>
+    </section>
+
+    <footer>
+        <p id="p">Combinações totais possíveis (52!): 8.07e+67</p>
+        <p id="g">Combinações totais possíveis (52!): 80,658,175,170,943,878,571,660,636,856,403,766,975,289,505,440,883,277,824,000,000,000,000</p>
+        <p>Porcentagem do total por ciclo: 1.239800e-57%</p>
+        <p>Desenvolvido por <a href="https://github.com/GustavoSouzax">GustavoSouzax</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
